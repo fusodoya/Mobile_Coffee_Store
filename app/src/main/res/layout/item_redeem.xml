@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="15dp"
+    android:paddingHorizontal="5dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    >
+
+    <!-- Coffee Image -->
+    <ImageView
+        android:id="@+id/redeem_coffee_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/temp"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Coffee Name -->
+        <TextView
+            android:id="@+id/redeem_coffee_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Cafe Latte"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Valid Until -->
+        <TextView
+            android:id="@+id/redeem_coffee_valid_until"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="Valid until 04.07.21"
+            android:textSize="14sp"
+            android:textColor="@color/gray" />
+
+    </LinearLayout>
+
+    <!-- Points -->
+    <TextView
+        android:id="@+id/redeem_coffee_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="1340 pts"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_blue"
+        android:textSize="14sp"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="5dp"
+        android:textStyle="bold" />
+</LinearLayout>

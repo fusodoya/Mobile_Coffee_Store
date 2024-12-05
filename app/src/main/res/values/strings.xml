@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Coffee Store</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="loyalty_card">Loyalty card</string>
+    <string name="order_success_title">Order Success</string>
+    <string name="order_success_subtitle">Your order has been placed successfully.\nFor more details, go to my orders.</string>
+    <string name="track_my_order">Track My Order</string>
+    <string name="order_success_icon_desc">Order Success Icon</string>
+</resources>

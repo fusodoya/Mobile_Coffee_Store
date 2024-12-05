@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <size
+        android:height="1dp" /> <!-- Độ dày của đường thẳng -->
+    <solid android:color="@color/light2_gray" /> <!-- Màu xám -->
+</shape>

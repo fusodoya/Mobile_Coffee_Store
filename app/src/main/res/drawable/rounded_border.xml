@@ -1,0 +1,12 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Định dạng khung -->
+    <solid android:color="@android:color/transparent" />
+
+    <!-- Thiết lập viền -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/dark3_blue" />
+
+    <!-- Bo góc -->
+    <corners android:radius="16dp" />
+</shape>

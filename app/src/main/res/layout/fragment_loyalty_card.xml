@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loyalty_card_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_blue"
+    android:padding="16dp">
+
+    <!-- Title and Counter -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/loyalty_card"
+            android:textColor="@color/light2_gray"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/coffee_bought"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 / 8"
+            android:textColor="#EAEAEA"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Progress (Coffee Cups) -->
+    <LinearLayout
+        android:id="@+id/card_cup_list"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/rounded_white"
+        android:layout_marginTop="16dp"
+        android:padding="8dp">
+
+        <!-- Filled Cups -->
+        <ImageView
+            android:id="@+id/coffee01"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_coffee_filled"
+            android:layout_marginEnd="8dp" />
+
+        <ImageView
+            android:id="@+id/coffee02"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_coffee_filled"
+            android:layout_marginEnd="8dp" />
+
+        <ImageView
+            android:id="@+id/coffee03"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_coffee_filled"
+            android:layout_marginEnd="8dp" />
+
+        <ImageView
+            android:id="@+id/coffee04"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_coffee_filled"
+            android:layout_marginEnd="8dp" />
+
+        <ImageView
+            android:id="@+id/coffee05"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_coffee_empty"
+            android:layout_marginEnd="8dp" />
+
+        <ImageView
+            android:id="@+id/coffee06"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_coffee_empty"
+            android:layout_marginEnd="8dp" />
+
+        <ImageView
+            android:id="@+id/coffee07"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_coffee_empty"
+            android:layout_marginEnd="8dp" />
+
+        <ImageView
+            android:id="@+id/coffee08"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_coffee_empty" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/reward_claim_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Claim One"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark3_blue"
+            android:background="@drawable/rounded_gray"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/reward_claim_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Claim All"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark3_blue"
+            android:background="@drawable/rounded_gray"
+            android:padding="10dp"
+            android:layout_marginStart="30dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

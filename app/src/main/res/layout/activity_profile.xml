@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    tools:context=".Profile.Profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/profile_back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_arrow"
+                android:contentDescription="Back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/dark3_blue" />
+
+            <TextView
+                android:id="@+id/profile_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_toEndOf="@id/redeem_back_button"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:text="Profile"
+                android:textColor="@color/dark3_blue"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+        <!-- Full Name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_user"
+                android:contentDescription="User Icon"
+                app:tint="@color/dark3_blue"
+                android:background="@drawable/rounded_gray"
+                android:padding="8dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="16dp"
+                    android:text="Full Name"
+                    android:textStyle="bold"
+                    android:textSize="10sp"
+                    android:textColor="@color/light_gray" />
+
+                <TextView
+                    android:id="@+id/profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="16dp"
+                    android:textStyle="bold"
+                    android:text="Anderson"
+                    android:textSize="16sp"
+                    android:textColor="@color/dark3_blue" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/edit_name"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_edit"
+                android:layout_marginStart="20dp"
+                app:tint="@color/dark3_blue"
+                android:contentDescription="Edit Icon" />
+        </LinearLayout>
+
+        <!-- Phone Number -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_phone"
+                android:contentDescription="Phone Icon"
+                app:tint="@color/dark3_blue"
+                android:background="@drawable/rounded_gray"
+                android:padding="8dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="16dp"
+                    android:text="Phone number"
+                    android:textStyle="bold"
+                    android:textSize="10sp"
+                    android:textColor="@color/light_gray" />
+
+                <TextView
+                    android:id="@+id/profile_phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="16dp"
+                    android:textStyle="bold"
+                    android:text="+60134589525"
+                    android:textSize="16sp"
+                    android:textColor="@color/dark3_blue" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/edit_phone"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_edit"
+                android:layout_marginStart="20dp"
+                app:tint="@color/dark3_blue"
+                android:contentDescription="Edit Icon" />
+        </LinearLayout>
+
+        <!-- Email -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_email"
+                android:contentDescription="Email Icon"
+                app:tint="@color/dark3_blue"
+                android:background="@drawable/rounded_gray"
+                android:padding="8dp"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="16dp"
+                    android:text="Email"
+                    android:textStyle="bold"
+                    android:textSize="10sp"
+                    android:textColor="@color/light_gray" />
+
+                <TextView
+                    android:id="@+id/profile_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="16dp"
+                    android:textStyle="bold"
+                    android:text="Anderson@email.com "
+                    android:textSize="16sp"
+                    android:textColor="@color/dark3_blue" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/edit_email"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_edit"
+                android:layout_marginStart="20dp"
+                app:tint="@color/dark3_blue"
+                android:contentDescription="Edit Icon" />
+        </LinearLayout>
+
+        <!-- Address -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_orders_location"
+                android:contentDescription="Location Icon"
+                android:background="@drawable/rounded_gray"
+                android:padding="8dp"
+                app:tint="@color/dark3_blue" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="16dp"
+                    android:text="Address"
+                    android:textStyle="bold"
+                    android:textSize="10sp"
+                    android:textColor="@color/light_gray" />
+
+                <TextView
+                    android:id="@+id/profile_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="16dp"
+                    android:textStyle="bold"
+                    android:text="3 Addersion Court
+Chino Hills, HO56824, United State"
+                    android:textSize="16sp"
+                    android:textColor="@color/dark3_blue" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/edit_address"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_edit"
+                android:layout_marginStart="20dp"
+                app:tint="@color/dark3_blue"
+                android:contentDescription="Edit Icon" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
