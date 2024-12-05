@@ -1,4 +1,4 @@
-# AI Search
+# Mobile Midterm: Coffee Store
 ## Introduction
 Hello everyone, this is my midterm project in Mobile course. This is a individual  project. 
 This project simulates a coffee ordering app. For more information,  let's watch the demo video below:
